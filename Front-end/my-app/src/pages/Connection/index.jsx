@@ -1,10 +1,12 @@
-import Form from "../../components/Form";
+// import Form from "../../components/Form";
+import Logged from "../../components/Logged";
 
 function Connection() {
   return (
-    <main className="main bg-dark">
-      <Form />
-    </main>
+    <>
+      {/* <Form /> */}
+      <Logged />
+    </>
   );
 }
 export default Connection;

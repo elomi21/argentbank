@@ -1,5 +1,16 @@
 @import "../../style/Main.scss";
 
+
+.main {
+  padding-top: 3rem;
+  padding-bottom: auto;
+}
+@media (min-width: 920px) {
+  .main {
+    padding-bottom: 16rem;
+  }
+}
+
   .sign-in-content {
     box-sizing: border-box;
     background-color: white;
