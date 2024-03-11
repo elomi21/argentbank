@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./style/index.scss";
 import Home from "./pages/Home";
-import Connection from "./pages/Connection";
+import Connect from "./pages/Connect";
 import Error from "./pages/Error/";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Connection" element={<Connection />} />
+          <Route path="/Connect" element={<Connect />} />
           <Route path="/Error" element={<Error />} />
         </Routes>
         <Footer />
