@@ -14,7 +14,7 @@ function Header() {
         </NavLink>
         <h1 className="sr-only">Argent Bank</h1>
         <div>
-          <NavLink className="main-nav-item" to="/Connection">
+          <NavLink className="main-nav-item" to="/Connect">
             <i className="fa fa-user-circle"></i>
             Sign In
           </NavLink>

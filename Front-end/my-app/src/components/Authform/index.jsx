@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Form() {
+function Authform() {
   return (
     <main className="main bg-dark">
       <section className="sign-in-content">
@@ -27,4 +27,4 @@ function Form() {
     </main>
   );
 }
-export default Form;
+export default Authform;

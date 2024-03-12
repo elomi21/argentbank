@@ -1,12 +1,12 @@
-import Form from "../../components/Form";
+import Authform from "../../components/Authform";
 // import Logged from "../../components/Logged";
 
-function Connection() {
+function Connect() {
   return (
     <div>
-      <Form />
+      <Authform />
       {/* <Logged /> */}
     </div>
   );
 }
-export default Connection;
+export default Connect;
