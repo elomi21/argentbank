@@ -5,6 +5,7 @@ import Connect from "./pages/Connect";
 import Error from "./pages/Error/";
 import Header from "./components/Header/";
 import Footer from "./components/Footer/";
+import Logged from "./pages/Logged";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Connect" element={<Connect />} />
+          <Route path="/Logged" element={<Logged />} />
           <Route path="/Error" element={<Error />} />
         </Routes>
         <Footer />
