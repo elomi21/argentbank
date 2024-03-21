@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export const AUTH_USER = "AUTH_USER";
 
 export const AuthUser = (email, password) => {
@@ -9,6 +10,7 @@ export const AuthUser = (email, password) => {
       .then((res) => {
         const token = res.data;
         dispatch({ type: AUTH_USER, payload: token });
+        window.localStorage.setItem("token", token);
         console.log(res);
       })
       .catch((err) => {

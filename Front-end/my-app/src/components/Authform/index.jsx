@@ -2,14 +2,16 @@ import { useState } from "react";
 import { AuthUser } from "../../actions/authuser.action";
 import { useDispatch } from "react-redux";
 
+
 function Authform() {
   const dispatch = useDispatch();
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+ 
   function handleSubmit(submitedform) {
     submitedform.preventDefault();
     dispatch(AuthUser(userName, password));
+    
   }
 
   return (
@@ -21,7 +23,7 @@ function Authform() {
           <div className="input-wrapper">
             <label htmlFor="username">Username</label>
             <input
-              type="mail"
+              type="email"
               id="username"
               onChange={(e) => setUsername(e.target.value)}
               autoComplete="username"
